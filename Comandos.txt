@@ -1,0 +1,33 @@
+////////////////////////////////////////////////////////////
+////////////////            COMANDOS            ////////////
+////////////////////////////////////////////////////////////
+
+
+Saidas = STDIN(0) --> PROGRAMA  --> STDOUT(1)
+                         |
+                         |-------> STDOUT(2)
+
+
+//Saida para de um arquivo para outro
+
+--> cat alunos.txt > alunos_2.txt = pega a saida e cria o novo arquivo com os dados do primeiro, porem sempre sobrescreve
+
+--> cat alunos.txt >> alunos_2.txt = mesmo que o anterior, porem concatenando novos dados.
+
+
+
+// Jogando saida de erro para arquivo
+
+--> cat arquivo_inexistente.txt 2> alunos_2.txt = o número dois antes do sinal de maior é o código que captura a saida de erro e manda para o arquivo.
+
+--> cat arquivo_inexistente.txt > log.txt 2> log-erro.txt = se o arquivo existir, manda para a primeira opção, se não para a segunda.
+
+--> cat arquivo_inexistente.txt > log.out 2>&1 = joga a saida de execução OK e a de erro no mesmo arquivo
+
+
+--> ls -l arquivo_inexistente.txt 2> /dev/null = não mostra a saida de erro na tela, é o chamado buraco negro do linux
+
+
+--> cat alunos.txt | tr a Z = troca a por Z
+
+-- tr 'a' 'Z' < alunos.txt = recebe entrada de alunos e joga no tr
