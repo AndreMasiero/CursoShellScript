@@ -3,6 +3,9 @@
 ////////////////////////////////////////////////////////////
 
 
+
+/////////////  saidas
+
 Saidas = STDIN(0) --> PROGRAMA  --> STDOUT(1)
                          |
                          |-------> STDOUT(2)
@@ -31,3 +34,24 @@ Saidas = STDIN(0) --> PROGRAMA  --> STDOUT(1)
 --> cat alunos.txt | tr a Z = troca a por Z
 
 -- tr 'a' 'Z' < alunos.txt = recebe entrada de alunos e joga no tr
+
+
+
+
+///  Variaveis
+
+--> TESTE=`date +%H` = para atribuir um valor de um comando a uma variavel, precisa de crase, no exemplo é o valor da hora.
+
+--> TESTE=$(date +%H) = mesmo efeito que o de cima
+
+
+
+
+
+
+
+
+
+
+
+
